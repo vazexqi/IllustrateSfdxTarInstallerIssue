@@ -15,10 +15,6 @@ environment:
   SFDX_AUTOUPDATE_DISABLE: true
   SFDX_DOMAIN_RETRY: 300
 
-environment:
-  SFDX_AUTOUPDATE_DISABLE: true
-  SFDX_DOMAIN_RETRY: 300
-
 install:
   - curl -fsSL -o sfdx-windows-amd64.tar.xz %SFDX_URL_WINDOWS%
   - 7z x sfdx-windows-amd64.tar.xz
