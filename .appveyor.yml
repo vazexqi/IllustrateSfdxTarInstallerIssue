@@ -22,7 +22,7 @@ install:
   - ps: $env:Path += ";" + (Get-ChildItem -Filter "sfdx-cli-*" -Directory).Fullname + "\bin"
   - ps: echo $env:Path
 
-build:
+build_script:
   - echo 'Nothing to build'
 
 # Just try to invoke and echo out the sfdx version
