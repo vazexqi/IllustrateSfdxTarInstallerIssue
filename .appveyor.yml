@@ -23,7 +23,7 @@ install:
   - ps: echo $env:Path
 
 build_script:
-  - echo 'Nothing to build'
+  - ps: Get-MpPreference
 
 # Just try to invoke and echo out the sfdx version
 test_script:
