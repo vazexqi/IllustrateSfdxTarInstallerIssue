@@ -23,13 +23,13 @@ install:
   - ps: echo $env:Path
 
 build_script:
-  - ps: Get-MpPreference
+  - echo 'Nothing to build'
 
 # Just try to invoke and echo out the sfdx version
 test_script:
   - sfdx version
 
 # Uncomment if you want to RDP into the machine to debug this
-on_finish:
-  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+# on_finish:
+#   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
  
